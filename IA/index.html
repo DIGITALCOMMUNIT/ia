@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Creamos un formulario para que el usuario pueda enviar preguntas a la IA -->
+<form action="/pregunta" method="post">
+    <label for="pregunta">Soy Bryan haz me una pregunta </label><br>
+    <input type="text" id="pregunta" name="pregunta"><br>
+    <input type="submit" value="Enviar">
+</form>
+
+<!-- Mostramos la respuesta de la IA -->
+<div id="respuesta">
+    {{ respuesta }}
+</div>
+
+    
+</body>
+</html>
